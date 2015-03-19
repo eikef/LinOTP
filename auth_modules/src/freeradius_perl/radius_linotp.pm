@@ -345,6 +345,9 @@ sub authorize {
     # For debugging purposes only
     # &log_request_attributes;
 
+    $RAD_CHECK{'Auth-Type'} = "Perl";
+    $RAD_CHECK{'Fall-Through'} = "yes";
+
     return RLM_MODULE_OK;
 }
 
